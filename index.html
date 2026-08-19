@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Torodogo — Hot Dogs Estilo Sonora | 100 cm de Puro Sabor</title>
+  <meta name="description" content="Torodogo: hot dogs estilo Sonora, Toroburguer, alitas, boneless y aros de cebolla hechos con pan artesanal. Cotiza tu boda, fiesta o evento y vive el sabor de 100 centímetros.">
+  <meta name="keywords" content="hot dogs estilo sonora, dogos sonorenses, toroburguer, hamburguesas, alitas y boneless, aros de cebolla, comida para eventos, food truck bodas y fiestas, torodogo">
+  <meta property="og:title" content="Torodogo — Hot Dogs Estilo Sonora | 100 cm de Puro Sabor">
+  <meta property="og:description" content="Dogos estilo Sonora, Toroburguer, alitas y botanas con pan artesanal. Llevamos el sabor a tu boda, fiesta o evento.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="imagenes/hero-dogo-100cm.jpeg">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23171310'/%3E%3Ccircle cx='50' cy='54' r='30' fill='%23fffaf1' stroke='%23c41230' stroke-width='5'/%3E%3Cpath d='M28 40 Q50 54 28 68' fill='none' stroke='%23c41230' stroke-width='2.5' stroke-dasharray='1 4' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader" aria-hidden="true">
+  <div class="ld-logo">
+    <div class="ld-ball"></div>
+    <div class="ld-brand">
+      <p class="ld-name">ToroDogo</p>
+      <p class="ld-tag">100 cm de puro sabor</p>
+    </div>
+  </div>
+  <div class="ld-progress">
+    <div class="ld-track"><div class="ld-fill"></div></div>
+    <p class="ld-note">Cargando</p>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav id="nav" role="navigation" aria-label="Menú principal">
+  <div class="nav-wrap">
+    <a href="#" class="logo" aria-label="Torodogo">
+      <svg viewBox="0 0 100 100" aria-hidden="true">
+        <circle cx="50" cy="50" r="46" fill="#fffaf1" stroke="#171310" stroke-width="6"/>
+        <path d="M18 22 Q52 50 18 78" fill="none" stroke="#c41230" stroke-width="3.5" stroke-dasharray="1 5" stroke-linecap="round"/>
+        <path d="M82 22 Q48 50 82 78" fill="none" stroke="#c41230" stroke-width="3.5" stroke-dasharray="1 5" stroke-linecap="round"/>
+      </svg>
+      <div class="logo-word">Toro<em>Dogo</em></div>
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="#about">Nosotros</a></li>
+      <li><a href="#menu">Menú</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="#contact">Contacto</a></li>
+      <li><a href="#contact" class="nav-cta">Cotiza tu Evento</a></li>
+    </ul>
+    <button class="hamburger" id="ham" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div id="mob" class="mob-menu" role="navigation" aria-label="Menú móvil">
+  <a href="#about">Nosotros</a>
+  <a href="#menu">Menú</a>
+  <a href="#galeria">Galería</a>
+  <a href="#contact">Cotiza tu Evento</a>
+</div>
+
+<main>
+
+<!-- HERO -->
+<section id="hero" aria-label="Encabezado principal">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-ov" aria-hidden="true"></div>
+  <canvas id="pcanvas" aria-hidden="true"></canvas>
+
+  <div class="hero-body">
+    <div class="wrap">
+      <p class="hero-eyebrow">Torodogo · Dogos Estilo Sonora</p>
+      <h1 class="hero-h1">
+        <span class="h1-line"><span class="h1-inner">Sabor Sonorense</span></span>
+        <span class="h1-line"><span class="h1-inner">que Conquista</span></span>
+        <span class="h1-line h1-accent"><span class="h1-inner"><span class="accent-cycle" id="accentCycle">Tu Evento</span></span></span>
+      </h1>
+      <p class="hero-p">
+        Del pan artesanal al último toque de salsa: dogos estilo Sonora, Toroburguer, alitas, boneless y aros de cebolla hechos al momento. El sabor de 100 centímetros que se roba las fotos de tu boda, tu fiesta o tu próximo antojo.
+      </p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn-primary">
+          Cotiza tu Evento
+          <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <a href="#menu" class="btn-secondary">Ver Menú</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-stats" aria-label="Lo que nos distingue">
+    <div class="wrap">
+      <div class="stats-row">
+        <div class="stat-col">
+          <span class="stat-val" data-hero-count="100" data-prefix="" data-suffix=" cm">0 cm</span>
+          <span class="stat-lbl">Nuestro dogo insignia</span>
+        </div>
+        <div class="stat-col">
+          <span class="stat-val" data-hero-count="100" data-prefix="" data-suffix="%">0%</span>
+          <span class="stat-lbl">Pan artesanal</span>
+        </div>
+        <div class="stat-col">
+          <span class="stat-val">Estilo Sonora</span>
+          <span class="stat-lbl">Receta original</span>
+        </div>
+        <div class="stat-col">
+          <span class="stat-val">A tu Evento</span>
+          <span class="stat-lbl">Boda, fiesta o antojo</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-deco" aria-hidden="true">
+    <div class="hero-orb hero-orb--1"></div>
+    <div class="hero-orb hero-orb--2"></div>
+  </div>
+  <div class="hero-scroll-cue" aria-hidden="true">
+    <svg width="22" height="34" viewBox="0 0 22 34" fill="none">
+      <rect x="1" y="1" width="20" height="32" rx="10" stroke="rgba(255,255,255,.25)" stroke-width="1.5"/>
+      <circle class="mouse-dot" cx="11" cy="9" r="3" fill="rgba(255,255,255,.55)"/>
+    </svg>
+    <span class="scroll-label">Scroll</span>
+  </div>
+  <div class="hero-badge" aria-hidden="true">
+    <span class="hb-dot"></span>
+    <span class="hb-text">Hecho al momento, para tu antojo</span>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<section id="trust" aria-label="Ocasiones que atendemos">
+  <div class="wrap">
+    <div class="trust-row">
+      <p class="trust-label">Ideal para</p>
+      <div class="trust-chips">
+        <span class="trust-chip">Bodas y XV Años</span>
+        <span class="trust-chip">Eventos Empresariales</span>
+        <span class="trust-chip">Fiestas y Reuniones</span>
+        <span class="trust-chip">Kermeses</span>
+        <span class="trust-chip">Antojo del Día</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section bg-white">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-img-wrap rev from-l">
+        <div class="about-img-main">
+          <img src="imagenes/equipo-local-torodogo.jpeg" alt="Equipo de Torodogo celebrando frente a su local con el logo de la marca estilo béisbol" loading="lazy">
+        </div>
+        <div class="about-accent">
+          <p class="a-num">100</p>
+          <p class="a-lbl">cm de puro sabor</p>
+        </div>
+      </div>
+      <div class="about-text rev">
+        <p class="eyebrow">Quiénes somos</p>
+        <h2 class="heading">Del Carrito al Corazón de Cada Evento</h2>
+        <p>Torodogo nació de una pasión simple: llevar el auténtico hot dog estilo Sonora a cada mesa, con pan artesanal, ingredientes de calidad y ese toque casero que se nota desde el primer bocado.</p>
+        <p>Hoy nuestro menú va más allá del dogo: hamburguesas Toroburguer, alitas, boneless, aros de cebolla y botanas para acompañar cualquier ocasión — desde una tarde cualquiera hasta la boda, la fiesta o el evento que quieres que se recuerde.</p>
+        <div class="about-stats">
+          <div class="a-stat">
+            <p class="a-stat-n" data-count="100" data-prefix="" data-suffix=" cm"></p>
+            <p class="a-stat-l">De puro sabor en cada dogo</p>
+          </div>
+          <div class="a-stat">
+            <p class="a-stat-n" data-count="100" data-prefix="" data-suffix="%"></p>
+            <p class="a-stat-l">Pan artesanal</p>
+          </div>
+          <div class="a-stat">
+            <p class="a-stat-n">Sonora</p>
+            <p class="a-stat-l">Receta original</p>
+          </div>
+          <div class="a-stat">
+            <p class="a-stat-n">Eventos</p>
+            <p class="a-stat-l">Bodas, fiestas y más</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MENÚ (categorías) -->
+<section id="menu" class="section bg-off">
+  <div class="wrap">
+    <div class="section-head section-head--center">
+      <p class="eyebrow">Lo que hacemos</p>
+      <h2 class="heading">Un Menú Hecho para Antojarte</h2>
+      <p class="sub">Cuatro categorías, un mismo estándar: pan artesanal, ingredientes de calidad y sabor que se nota.</p>
+    </div>
+    <div class="svc-grid">
+
+      <div class="svc-card rev d1">
+        <span class="svc-num" aria-hidden="true">01</span>
+        <div class="svc-icon ic-red">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#c41230" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 12c0-3 2-5 4-5s3 1 5 1 3-1 5-1 4 2 4 5-2 5-4 5-3-1-5-1-3 1-5 1-4-2-4-5z"/>
+            <path d="M6 9.5c1.2 1 1.2 4 0 5M18 9.5c-1.2 1-1.2 4 0 5"/>
+          </svg>
+        </div>
+        <h3>Dogos Estilo Sonora</h3>
+        <p>Nuestro clásico: pan artesanal, tocino, salsas de la casa y todos los toppings que hacen único al hot dog sonorense.</p>
+        <div class="svc-tags">
+          <span class="tag tag-r">Pan artesanal</span>
+          <span class="tag tag-r">El de 100 cm</span>
+          <span class="tag tag-r">Toppings a tu gusto</span>
+        </div>
+      </div>
+
+      <div class="svc-card rev d2">
+        <span class="svc-num" aria-hidden="true">02</span>
+        <div class="svc-icon ic-gold">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#a9752c" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 9a8 8 0 0 1 16 0"/>
+            <rect x="3" y="9" width="18" height="3" rx="1.4"/>
+            <path d="M4 15a8 8 0 0 0 16 0"/>
+          </svg>
+        </div>
+        <h3>Toroburguer</h3>
+        <p>Carne jugosa, quesos derretidos y combinaciones que van del clásico al extremo — acompañadas de papas o aros de cebolla.</p>
+        <div class="svc-tags">
+          <span class="tag tag-g">Carne jugosa</span>
+          <span class="tag tag-g">Combos con papas</span>
+          <span class="tag tag-g">Extra queso</span>
+        </div>
+      </div>
+
+      <div class="svc-card rev d3">
+        <span class="svc-num" aria-hidden="true">03</span>
+        <div class="svc-icon ic-black">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4a4038" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M8 3c3 0 4 2 4 4s3 1 3 4-2 4-2 6-2 3-4 3-4-1-4-3 1-3 1-6-2-2-2-5 1-3 4-3z"/>
+          </svg>
+        </div>
+        <h3>Alitas y Boneless</h3>
+        <p>Bañadas en la salsa que elijas, crujientes por fuera y perfectas para compartir en cualquier reunión.</p>
+        <div class="svc-tags">
+          <span class="tag">Varias salsas</span>
+          <span class="tag">Crujientes</span>
+          <span class="tag">Para compartir</span>
+        </div>
+      </div>
+
+      <div class="svc-card rev d4">
+        <span class="svc-num" aria-hidden="true">04</span>
+        <div class="svc-icon ic-red">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#c41230" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="8"/>
+            <circle cx="12" cy="12" r="3.4"/>
+          </svg>
+        </div>
+        <h3>Aros de Cebolla y Botanas</h3>
+        <p>Nachos, aros de cebolla y botanas para acompañar tu dogo o tu burger — o para picar mientras llega el pedido.</p>
+        <div class="svc-tags">
+          <span class="tag tag-r">Nachos</span>
+          <span class="tag tag-r">Aros de cebolla</span>
+          <span class="tag tag-r">Para compartir</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTOS DESTACADOS -->
+<section id="productos" class="section bg-white">
+  <div class="wrap">
+    <div class="prod-header">
+      <div>
+        <p class="eyebrow">Nuestros favoritos</p>
+        <h2 class="heading">Los Favoritos de Siempre</h2>
+      </div>
+      <a href="#contact" class="btn-outline rev">Cotiza tu Evento</a>
+    </div>
+    <div class="prod-grid">
+
+      <div class="prod-card rev d1">
+        <div class="prod-photo">
+          <img src="imagenes/dogo-estilo-sonora.jpeg" alt="Dogo estilo Sonora de Torodogo con pico de gallo, mayonesa, mostaza y catsup sobre pan artesanal" loading="lazy">
+        </div>
+        <h3>Dogo Estilo Sonora</h3>
+        <p>El original: salchicha, tocino, pico de gallo y las salsas de la casa sobre pan artesanal.</p>
+        <span class="prod-pill">Más pedido</span>
+      </div>
+
+      <div class="prod-card rev d2">
+        <div class="prod-photo">
+          <img src="imagenes/toroburguer.jpeg" alt="Toroburguer de Torodogo frente al logo oficial de la marca" loading="lazy">
+        </div>
+        <h3>Toroburguer</h3>
+        <p>Carne jugosa y queso derretido, la burger que lleva el nombre de la casa con orgullo.</p>
+        <span class="prod-pill">Clásico Torodogo</span>
+      </div>
+
+      <div class="prod-card rev d3">
+        <div class="prod-photo">
+          <img src="imagenes/hamburguesa-queso-tocino.jpeg" alt="Hamburguesa con doble queso derretido y tocino, acompañada de corn dog bañado en salsa" loading="lazy">
+        </div>
+        <h3>Burger con Tocino y Queso</h3>
+        <p>Doble queso derretido, tocino crujiente y un corn dog bañado en salsa de mostaza y miel.</p>
+        <span class="prod-pill">Para compartir</span>
+      </div>
+
+      <div class="prod-card rev d4">
+        <div class="prod-photo">
+          <img src="imagenes/nachos-torodogo.jpeg" alt="Nachos Torodogo con carne, salsas de la casa y queso gratinado" loading="lazy">
+        </div>
+        <h3>Nachos Torodogo</h3>
+        <p>Botana perfecta con carne, salsas de la casa y todo el sabor Torodogo en cada capa.</p>
+        <span class="prod-pill">Botana estrella</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section id="why" class="section">
+  <div class="wrap">
+    <div class="why-grid">
+      <div class="why-img-wrap rev from-r">
+        <div class="why-img-main">
+          <img src="imagenes/food-truck-torodogo.jpeg" alt="Food truck de Torodogo con el logo de la marca y el dogo estilo Sonora recién preparado" loading="lazy">
+        </div>
+        <div class="why-img-badge">
+          <p class="wib-n">100%</p>
+          <p class="wib-l">Sabor artesanal</p>
+        </div>
+      </div>
+      <div class="why-content rev">
+        <p class="eyebrow eyebrow--white">Por qué elegirnos</p>
+        <h2 class="heading heading--white">La Diferencia Torodogo</h2>
+        <p class="sub sub--white">No es solo un hot dog: es una experiencia hecha con calidad, sazón y ganas de que tu evento se recuerde.</p>
+        <div class="benefit-list">
+          <div class="benefit">
+            <div class="ben-icon ben-icon-r">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f0637a" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 12c0-3 2-5 4-5s3 1 5 1 3-1 5-1 4 2 4 5-2 5-4 5-3-1-5-1-3 1-5 1-4-2-4-5z"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Pan Artesanal en Cada Bocado</h4>
+              <p>Elegimos pan artesanal para que cada dogo y cada burger tengan la textura y el sabor que un pan de bolsa no puede dar.</p>
+            </div>
+          </div>
+          <div class="benefit">
+            <div class="ben-icon ben-icon-g">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f5d488" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="9 12 11 14 15 10"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Ingredientes de Calidad</h4>
+              <p>Carne, salsas y toppings seleccionados para que cada producto salga con el mismo nivel: el de siempre.</p>
+            </div>
+          </div>
+          <div class="benefit">
+            <div class="ben-icon ben-icon-r">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f0637a" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="9"/>
+                <path d="M12 7v5l3.5 2"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Hecho al Momento</h4>
+              <p>Preparamos cada orden cuando la pides, para que llegue caliente, fresca y con todo su sabor.</p>
+            </div>
+          </div>
+          <div class="benefit">
+            <div class="ben-icon ben-icon-w">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.65)" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Presencia en Tus Eventos</h4>
+              <p>Llevamos Torodogo a bodas, fiestas y reuniones para que tus invitados vivan la experiencia completa.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CÓMO PEDIR -->
+<section id="numbers">
+  <div class="wrap">
+    <div class="section-head section-head--center">
+      <p class="eyebrow">Cómo funciona</p>
+      <h2 class="heading">Así Pedimos Tu Antojo</h2>
+    </div>
+    <div class="numbers-grid">
+      <div class="number-item rev d1">
+        <p class="num-v">01</p>
+        <p class="num-l">Elige tu antojo: dogos, Toroburguer, alitas o botanas</p>
+      </div>
+      <div class="number-item rev d2">
+        <p class="num-v">02</p>
+        <p class="num-l">Escríbenos por Instagram con la fecha y el tipo de evento</p>
+      </div>
+      <div class="number-item rev d3">
+        <p class="num-v">03</p>
+        <p class="num-l">Confirmamos disponibilidad, cantidad y ubicación</p>
+      </div>
+      <div class="number-item rev d4">
+        <p class="num-v">04</p>
+        <p class="num-l">Disfruta 100 centímetros de puro sabor</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALERÍA -->
+<section id="galeria">
+  <div class="wrap">
+    <div class="brands-head rev">
+      <p class="eyebrow eyebrow--white">Nuestro Sabor en Imágenes</p>
+      <h2 class="heading heading--white">Así se Vive Torodogo</h2>
+      <p class="brands-sub">Momentos, antojos y el sabor que nos representa en cada evento.</p>
+    </div>
+    <div class="brands-grid">
+      <div class="brand-card rev d1">
+        <div class="brand-card-inner">
+          <img src="imagenes/bandera-dogos.jpeg" alt="Bandera publicitaria de Torodogo en un evento" loading="lazy">
+        </div>
+      </div>
+      <div class="brand-card rev d2">
+        <div class="brand-card-inner">
+          <img src="imagenes/dogo-especial.jpeg" alt="Dogo especial de Torodogo con champiñones y toppings extra" loading="lazy">
+        </div>
+      </div>
+      <div class="brand-card rev d3">
+        <div class="brand-card-inner">
+          <img src="imagenes/dogo-mixto.jpeg" alt="Dogo Torodogo con papas y salsas de la casa" loading="lazy">
+        </div>
+      </div>
+      <div class="brand-card rev d4">
+        <div class="brand-card-inner">
+          <img src="imagenes/carrito-torodogo-junior.jpeg" alt="Carrito Torodogo Junior listo para atender un evento" loading="lazy">
+        </div>
+      </div>
+      <div class="brand-card rev d1">
+        <div class="brand-card-inner">
+          <img src="imagenes/promo-visitanos.jpeg" alt="Equipo de Torodogo invitando a visitar el local" loading="lazy">
+        </div>
+      </div>
+      <div class="brand-card rev d2">
+        <div class="brand-card-inner">
+          <img src="imagenes/equipo-local-noche.jpeg" alt="Equipo Torodogo en el local por la noche junto al logo de la marca" loading="lazy">
+        </div>
+      </div>
+      <div class="brand-card rev d3">
+        <div class="brand-card-inner">
+          <img src="imagenes/hamburguesa-camaron-jalapeno.jpeg" alt="Hamburguesa Torodogo con camarones y jalapeño relleno envuelto en tocino" loading="lazy">
+        </div>
+      </div>
+      <div class="brand-card rev d4">
+        <div class="brand-card-inner">
+          <img src="imagenes/hamburguesa-aros-cebolla.jpeg" alt="Hamburguesa Torodogo servida con aros de cebolla y papas a la francesa" loading="lazy">
+        </div>
+      </div>
+    </div>
+    <p class="brands-note rev">Cada orden, lista para tu próximo antojo o evento</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section bg-off">
+  <div class="wrap">
+    <div class="contact-grid">
+
+      <div class="contact-info rev from-l">
+        <p class="eyebrow">Contáctanos</p>
+        <h2 class="heading">Cotiza Tu Evento</h2>
+        <p class="sub" style="margin-bottom:36px">Cuéntanos la fecha, el lugar y cuántos son — te respondemos por Instagram con tu cotización.</p>
+        <div class="c-item">
+          <div class="c-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#c41230" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5"/>
+              <circle cx="12" cy="12" r="4.2"/>
+              <circle cx="17.4" cy="6.6" r="1.1" fill="#c41230" stroke="none"/>
+            </svg>
+          </div>
+          <div>
+            <p class="c-label">Instagram</p>
+            <p class="c-value"><a href="https://instagram.com/torodogo_" target="_blank" rel="noopener noreferrer">@torodogo_</a></p>
+          </div>
+        </div>
+        <div class="c-item">
+          <div class="c-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#c41230" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+          </div>
+          <div>
+            <p class="c-label">Cobertura</p>
+            <p class="c-value">Llevamos Torodogo a tu boda, fiesta o evento</p>
+          </div>
+        </div>
+        <div class="c-item">
+          <div class="c-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#c41230" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M3 12c0-3 2-5 4-5s3 1 5 1 3-1 5-1 4 2 4 5-2 5-4 5-3-1-5-1-3 1-5 1-4-2-4-5z"/>
+            </svg>
+          </div>
+          <div>
+            <p class="c-label">Ideal para</p>
+            <p class="c-value">Bodas, XV años, eventos empresariales y reuniones</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="rev">
+        <div class="form-wrap">
+          <h3>Solicita tu Cotización</h3>
+          <p class="form-sub">Completa tus datos, te copiamos el resumen y te abrimos el chat de Instagram para confirmar todo por DM.</p>
+          <form id="cForm" novalidate>
+            <div class="frow">
+              <div class="fg">
+                <label class="fl" for="fn">Nombre completo *</label>
+                <input class="fi" type="text" id="fn" name="nombre" placeholder="Tu nombre completo" required autocomplete="name">
+              </div>
+              <div class="fg">
+                <label class="fl" for="ft">Teléfono</label>
+                <input class="fi" type="tel" id="ft" name="telefono" placeholder="Para confirmar detalles" autocomplete="tel">
+              </div>
+            </div>
+            <div class="frow">
+              <div class="fg">
+                <label class="fl" for="fs">Tipo de evento *</label>
+                <select class="fi" id="fs" name="tipo" required>
+                  <option value="">Selecciona el tipo de evento</option>
+                  <option value="Boda o XV años">Boda o XV años</option>
+                  <option value="Evento empresarial">Evento empresarial</option>
+                  <option value="Fiesta o reunión">Fiesta o reunión</option>
+                  <option value="Kermés">Kermés</option>
+                  <option value="Antojo personal">Antojo personal</option>
+                  <option value="Otro">Otro</option>
+                </select>
+              </div>
+              <div class="fg">
+                <label class="fl" for="fp">Número de personas</label>
+                <input class="fi" type="number" min="1" id="fp" name="personas" placeholder="Aprox. cuántos son">
+              </div>
+            </div>
+            <div class="fg" style="margin-bottom:16px">
+              <label class="fl" for="ffs">Fecha del evento *</label>
+              <input class="fi" type="date" id="ffs" name="fecha" required>
+            </div>
+            <div class="fg">
+              <label class="fl" for="fm">Comentarios adicionales</label>
+              <textarea class="fi" id="fm" name="mensaje" rows="3" placeholder="Ubicación, antojo especial u otro detalle que debamos saber..."></textarea>
+            </div>
+            <button type="submit" class="btn-submit">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5"/>
+                <circle cx="12" cy="12" r="4.2"/>
+              </svg>
+              Enviar Cotización por Instagram
+            </button>
+            <p class="form-note">Al enviar, copiamos tu solicitud y abrimos tu Instagram para que la pegues en el DM de @torodogo_.</p>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-logo">
+          <svg viewBox="0 0 100 100" aria-hidden="true">
+            <circle cx="50" cy="50" r="46" fill="#fffaf1" stroke="#171310" stroke-width="6"/>
+            <path d="M18 22 Q52 50 18 78" fill="none" stroke="#c41230" stroke-width="3.5" stroke-dasharray="1 5" stroke-linecap="round"/>
+            <path d="M82 22 Q48 50 82 78" fill="none" stroke="#c41230" stroke-width="3.5" stroke-dasharray="1 5" stroke-linecap="round"/>
+          </svg>
+          <div class="logo-word">Toro<em>Dogo</em></div>
+        </div>
+        <p class="foot-desc">Hot dogs estilo Sonora, Toroburguer, alitas y botanas hechos con pan artesanal e ingredientes de calidad — para tu antojo de siempre o el evento que quieres que se recuerde.</p>
+      </div>
+      <div>
+        <p class="foot-col-title">Menú</p>
+        <ul class="foot-links">
+          <li><a href="#menu">Dogos Estilo Sonora</a></li>
+          <li><a href="#menu">Toroburguer</a></li>
+          <li><a href="#menu">Alitas y Boneless</a></li>
+          <li><a href="#menu">Aros de Cebolla</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="foot-col-title">Nosotros</p>
+        <ul class="foot-links">
+          <li><a href="#about">Quiénes Somos</a></li>
+          <li><a href="#why">Por Qué Elegirnos</a></li>
+          <li><a href="#galeria">Galería</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="foot-col-title">Contacto</p>
+        <ul class="foot-links">
+          <li><a href="https://instagram.com/torodogo_" target="_blank" rel="noopener noreferrer">Instagram: @torodogo_</a></li>
+          <li><a href="#contact">Cotiza tu Evento</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>© 2026 <span>Torodogo</span>. Todos los derechos reservados.</p>
+      <p>100 centímetros de puro sabor</p>
+    </div>
+  </div>
+</footer>
+
+<!-- INSTAGRAM FLOAT -->
+<div class="ig-float">
+  <span class="ig-tip">Escríbenos por Instagram</span>
+  <a href="https://instagram.com/torodogo_"
+     target="_blank"
+     rel="noopener noreferrer"
+     class="ig-btn"
+     aria-label="Contactar por Instagram">
+    <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true">
+      <rect x="2" y="2" width="20" height="20" rx="6" fill="none" stroke="#fff" stroke-width="1.8"/>
+      <circle cx="12" cy="12" r="4.6" fill="none" stroke="#fff" stroke-width="1.8"/>
+      <circle cx="17.6" cy="6.4" r="1.3" fill="#fff"/>
+    </svg>
+  </a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
